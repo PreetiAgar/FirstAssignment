@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="LoanDept" parallel="tests" thread-count="2">
+	<listeners>
+		  <listener class-name="rahulsaEcomPrac.TestComponents.Listeners"/>
+	  </listeners>
+  <test name="HomeLoan">
+	  
+	  <classes>
+		  <class name="testNGPractice.TestNGPrac">
+			  <methods>
+				  <include name="Demo"/>
+				  <include name="day1"/>
+				  <include name="day2"/>
+			  </methods>
+		  </class>	  
+		<class name="testNGPractice.demoClassName"/>
+		<class name="testNGPractice.day3"/>
+	  </classes>
+
+</test>
+
+</suite> 
