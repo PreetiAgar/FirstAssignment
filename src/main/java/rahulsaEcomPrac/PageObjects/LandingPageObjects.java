@@ -26,12 +26,12 @@ public class LandingPageObjects extends AbstractComponents {
 	@FindBy(id="login")
 	WebElement loginBtn;
 	
-	@FindBy(css="[@class*='flyInOut']")
+	@FindBy(xpath="//div[@aria-label='Incorrect email or password.']")
 	WebElement loginError;
 	
 	public String getErrorMsg() {
-		String errorMsg=loginError.getText();
 		waitForElementToAppear(loginError);
+		String errorMsg=loginError.getText();
 		return errorMsg;
 	}
 	
