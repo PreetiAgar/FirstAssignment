@@ -68,10 +68,7 @@
     <version>5.1.1</version>
 </dependency>
 
-<<<<<<< HEAD
-	
-=======
->>>>>>> 5a19ae80fd909389b518629fcd8fec2b6fbaacd7
+
 	</dependencies>
 	<profiles>
 		<profile>

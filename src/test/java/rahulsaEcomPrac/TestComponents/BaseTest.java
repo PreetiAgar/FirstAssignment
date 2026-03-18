@@ -70,7 +70,7 @@ public class BaseTest {
 
 	@AfterMethod
 	public void tearDown() {
-		driver.close();
+		driver.quit();
 	}
 
 	public List<HashMap<String, String>> getJsonDataToMap(String filePath) throws IOException {
