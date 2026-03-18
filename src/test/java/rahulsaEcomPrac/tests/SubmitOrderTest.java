@@ -22,7 +22,7 @@ import rahulsaEcomPrac.TestComponents.BaseTest;
 public class SubmitOrderTest extends BaseTest {
 	WebDriver driver;
 	String product = "ZARA COAT 3";
-	@Test(dataProvider="getData")
+	@Test(dataProvider="getData",groups="Purchase")
 	public void SubmitOrder(HashMap<String,String> input) throws Exception {
 
 		LandingPageObjects Lp=launchApplication();

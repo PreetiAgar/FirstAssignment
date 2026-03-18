@@ -22,7 +22,7 @@ public class ErrorValidationTest extends BaseTest {
 		
 	}
 	
-	@Test(groups= {"Error Handling"}, retryAnalyzer=Retry.class)
+	@Test(groups= {"Error Handling","Purchase"}, retryAnalyzer=Retry.class)
 	public void checkProductMismatch() throws Exception {
 		//LandingPageObjects Lp=launchApplication();
 		ProductCatalogPageObjects Pc=Lp.Login("preetiagarwal.official@gmail.com", "Bubba@1106");
