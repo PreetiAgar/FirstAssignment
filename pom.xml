@@ -67,13 +67,8 @@
     <artifactId>extentreports</artifactId>
     <version>5.1.1</version>
 </dependency>
-<<<<<<< HEAD
-
-
-	</dependencies>
-=======
 </dependencies>
->>>>>>> 59d1c256bdb8a2adda782096d10e926dec024ea2
+
 	<profiles>
 		<profile>
 			<id>Purchase</id>
