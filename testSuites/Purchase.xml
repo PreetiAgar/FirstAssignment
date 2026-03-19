@@ -10,13 +10,13 @@
 		  <listener class-name="rahulsaEcomPrac.TestComponents.Listeners"/>
 	  </listeners>
 
-  <test thread-count="5" name="Submit Order Test">
+  <test thread-count="1" name="Submit Order Test">
     <classes>
       <class name="rahulsaEcomPrac.tests.SubmitOrderTest"/>
     </classes>
   </test> <!-- Test -->
   
-    <test thread-count="5" name="Error Validation Test">
+    <test thread-count="1" name="Error Validation Test">
     <classes>
       <class name="rahulsaEcomPrac.tests.ErrorValidationTest"/>
     </classes>

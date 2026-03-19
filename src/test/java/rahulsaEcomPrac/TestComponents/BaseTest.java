@@ -29,7 +29,7 @@ public class BaseTest {
 	public WebDriver driver;
 	public LandingPageObjects Lp;
 
-	public WebDriver intializeDriver() throws IOException {
+	public WebDriver intializeBrowser() throws IOException {
 
 		Properties prop = new Properties();
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")
@@ -58,7 +58,7 @@ public class BaseTest {
 	@BeforeMethod
 	public LandingPageObjects launchApplication() throws Exception {
 		try {
-			driver = intializeDriver();
+			driver = intializeBrowser();
 			Lp = new LandingPageObjects(driver);
 			Lp.goTo();
 		} catch (Exception e) {
